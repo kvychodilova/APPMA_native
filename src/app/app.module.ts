@@ -5,6 +5,8 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { IonicStorageModule } from '@ionic/storage';
 
+import { TextToSpeech } from '@ionic-native/text-to-speech';
+
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
@@ -47,7 +49,8 @@ import { HistoryProvider } from '../providers/history/history';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     TranslationProvider,
-    HistoryProvider
+    HistoryProvider,
+    TextToSpeech,
   ]
 })
 export class AppModule {}
