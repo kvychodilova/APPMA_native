@@ -14,5 +14,11 @@
 
 
 <ion-content padding>
+  <ion-list>
+    <ion-item *ngfor="let record of historyArray"> {{record.from}}=> {{record.to}}
+
+    </ion-item>
+
+  </ion-list>
 
 </ion-content>
